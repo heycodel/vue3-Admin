@@ -17,7 +17,7 @@ export const  constantRoute = [
         },
         {
             path:'/:pathMatch(.*)*',
-            redirect:'404',
+            redirect:'login',
             name:'Any'
         },
 
