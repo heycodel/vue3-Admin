@@ -6,10 +6,13 @@ import type { loginForm } from "../../api/user/type";
 import type { userState } from "./types/types";
 //引入本地操作本地存储的方法
 import { SET_TOKEN, GET_TOKEN } from "../../utils/token";
+//引入路由
+import { constantRoute } from "../../router/routes";
 const useUserStore = defineStore("user", {
   state: (): userState => {
     return {
       token: GET_TOKEN() || null, //用户唯一标识符
+      menuRoutes: constantRoute //菜单路由
     };
   },
   actions: {
