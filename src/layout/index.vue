@@ -38,6 +38,9 @@ let userStore = useUserStore();
         .scrollbar {
             width: 100%;
             height: calc(100vh - 50px);
+            .el-menu{
+              border-right: none;
+            }
         }
     }
     .layout_tabbar {
