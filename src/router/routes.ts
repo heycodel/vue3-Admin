@@ -1,10 +1,12 @@
+
 //对外暴露配置路由
 export const  constantRoute = [
      {
             path:'/login',
             component:()=>import('@/views/login/index.vue'),
             name:'login',
-            meta:{title:'登录'}
+            meta:{title:'登录',hidden:true},
+            
         },
         {
             path:'/',
@@ -36,7 +38,8 @@ export const  constantRoute = [
             path:'/404',
             component:()=>import('@/views/404/index.vue'),
             name:'404',
-            meta:{title:'404'}
+            meta:{title:'404'},
+            hidden:true
         },
         {
             path:'/:pathMatch(.*)*',
