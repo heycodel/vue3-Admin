@@ -1,7 +1,7 @@
 <template>
     <div class="logo" v-if="!setting.logoHidden">
         <img :src="setting.logo" alt="logo" />
-        <p>{{setting.title}}</p>
+        <p style="white-space: nowrap;">{{setting.title}}</p>
     </div>
 </template>
 
@@ -15,7 +15,7 @@ import setting from '../../setting'
     color: #333;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     img {
         width: 50px;
         height: 50px;
